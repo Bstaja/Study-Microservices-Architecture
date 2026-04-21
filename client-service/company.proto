@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service CompanyService {
+  rpc GetCompanyValue (CompanyRequest) returns (CompanyResponse);
+}
+
+message CompanyRequest {
+  string name = 1;
+}
+
+message CompanyResponse {
+  string value = 1;
+}
